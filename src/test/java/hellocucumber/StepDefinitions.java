@@ -1,8 +1,8 @@
 package hellocucumber;
 
-import io.cucumber.java.en.*;
-
-import org.junit.jupiter.api.Assertions.*;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -12,7 +12,7 @@ class IsItFriday {
     }
 }
 public class StepDefinitions {
-    
+
     private String today;
     private String actualAnswer;
 
@@ -30,6 +30,5 @@ public class StepDefinitions {
     public void i_should_be_told(String expectedAnswer) {
         assertEquals(expectedAnswer, actualAnswer);
     }
-
 
 }
